@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Формула 1</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<h1>Формула 1</h1>
+<nav>
+<ul>
+<li><a href="#about">О Формуле 1</a></li>
+<li><a href="#teams">Команды</a></li>
+<li><a href="#gallery">Галерея</a></li>
+</ul>
+</nav>
+</header>
+
+<section id="about">
+    <h2>О Формуле 1</h2>
+    <p>
+        Формула 1 – это верхняя категория автоспорта, известная своими высокоскоростными автомобилями и яркими гоночными событиями по всему миру.
+    </p>
+</section>
+<section id="teams">
+    <h2>Известные команды</h2>
+    <ul>
+        <li>Mercedes</li>
+        <li>Red Bull Racing</li>
+        <li>Ferrari</li>
+    </ul>
+</section>
+<section id="gallery">
+    <h2>Галерея</h2>
+    <div class="gallery">
+        <img src="https://avatars.mds.yandex.net/i?id=eac5e9d330b6f6b7d376ad41ec1ff194fdb1c885-5232281-images-thumbs&n=13" alt="Автомобиль 1">
+        <img src="https://avatars.mds.yandex.net/i?id=65d395ffd628c1d27a417077a1ead732371f273f-5141122-images-thumbs&n=13" alt="Автомобиль 2">
+        <img src="https://avatars.mds.yandex.net/i?id=3c4db6644983c2367e70dc2b47f6acc6872d010d-5279616-images-thumbs&n=13" alt="Автомобиль 3">
+    </div>
+</section>
+<footer>
+    <p>&copy; 2023 Формула 1. Все права защищены.</p>
+</footer>
+</body>
+</html>
+
+CSS
+(styles.css)
+
+{
+box-sizing: border-box;
+}
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f0f0f0;
+}
+
+header {
+background-color: #333;
+color: white;
+padding: 20px;
+text-align: center;
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+}
+
+nav ul li {
+display: inline;
+margin: 0 15px;
+}
+
+nav ul li a {
+color: white;
+text-decoration: none;
+}
+
+section {
+padding: 20px;
+margin: 20px;
+background-color: white;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery {
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.gallery img {
+max-width: 30%;
+border-radius: 8px;
+margin-bottom: 20px;
+}
+
+footer {
+text-align: center;
+padding: 10px;
+background-color: #333;
+color: white;
+position: relative;
+bottom: 0;
+width: 100%;
+}
